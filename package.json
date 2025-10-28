@@ -1,0 +1,8 @@
+{
+  "name": "ieee-sql-website",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "pg": "^8.11.0"
+  }
+}
