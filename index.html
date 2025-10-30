@@ -142,7 +142,7 @@
       btn.textContent = 'Running...';
 
       try {
-        const r = await fetch('/api/query', {
+        const r = await fetch('https://ieee-sql-backend.onrender.com', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ sql })
@@ -175,3 +175,4 @@
   </script>
 </body>
 </html>
+
