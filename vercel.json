@@ -3,8 +3,8 @@
   "builds": [
     { "src": "api/query.js", "use": "@vercel/node" }
   ],
-  "routes": [
-    { "src": "/api/query", "dest": "/api/query.js" },
-    { "src": "/(.*)", "dest": "/index.html" }
+  "rewrites": [
+    { "source": "/api/query", "destination": "/api/query.js" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
